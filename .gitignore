@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+Thumbs.db
+*.log
+.env*
+/.aistudio/
+/.antigravity/
+/.vscode/
+/public/assets/aistudio/
