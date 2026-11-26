@@ -23,6 +23,8 @@ Take apart four cars in your browser. Orbit a car, move the teardown slider to s
 
 ## Build your own teardown showroom
 
+Thanks to [elvarofficial](https://github.com/elvarofficial) for creating [teardown](https://github.com/elvarofficial/teardown), the Claude Code skill that inspired this showroom and its Codex skill.
+
 Use [`$build-teardown-showroom`](.agents/skills/build-teardown-showroom/SKILL.md) in Codex with the car or mechanical assembly you want to build. The skill covers component modeling, exploded views, cutaways, and visual checks. The [four-car build prompt](docs/BUILD_PROMPT.md) is its worked example.
 
 ## Run locally
@@ -54,6 +56,6 @@ The build writes the static site to `dist/`. `lint` runs the TypeScript check. T
 
 The React controls live in `src/components/TeardownHUD.tsx`. The vehicle specs, procedural models, and render loop live in `src/sim/`.
 
-## License and credits
+## License
 
-The project source is available under the [Apache License 2.0](LICENSE). The teardown concept was inspired by [elvarofficial/teardown](https://github.com/elvarofficial/teardown). Vehicle names and marks belong to their respective owners. This project is independent of the vehicle manufacturers.
+The project source is available under the [Apache License 2.0](LICENSE). Vehicle names and marks belong to their respective owners. This project is independent of the vehicle manufacturers.

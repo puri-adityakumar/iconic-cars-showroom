@@ -25,3 +25,5 @@ Identify the subject, the assemblies the viewer should inspect, and the level of
 Use a controls-free capture view with explicit camera, assembly, and mechanical state. Step time by frame index in Chromium when the motion needs to be repeatable. Show the assembled object first, then an exploded view and an internal detail. For video, encode with FFmpeg and play back the opening, transitions, and ending before sharing it.
 
 Read [the Iconic Cars build prompt](references/iconic-cars-build-prompt.md) when recreating this repository's four-car showroom or when an example of vehicle specs, director controls, and a demo storyboard would help.
+
+This skill draws inspiration from [elvarofficial’s teardown skill for Claude Code](https://github.com/elvarofficial/teardown).
