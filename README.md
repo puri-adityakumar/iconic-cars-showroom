@@ -2,8 +2,6 @@
 
 Take apart four cars in your browser. Orbit a car, move the teardown slider to separate its assemblies, or isolate the engine and step through its firing cycle. The models, studio environments, and textures are built procedurally in Three.js.
 
-[![White Porsche 911 Carrera RS 2.7 on the showroom turntable](docs/screenshots/porsche-911-rs.jpg)](docs/screenshots/README.md)
-
 ## Cars
 
 | Car | Engine |
@@ -12,6 +10,20 @@ Take apart four cars in your browser. Orbit a car, move the teardown slider to s
 | 1990 BMW M3 Sport Evolution (E30) | 2.5 L S14 inline-four |
 | 2002 BMW M5 (E39) | 4.9 L S62 V8 |
 | 2020 Nissan GT-R (R35) | 3.8 L VR38DETT twin-turbo V6 |
+
+### Screenshots
+
+| Porsche 911 Carrera RS 2.7 | BMW M3 Sport Evolution |
+| --- | --- |
+| [![White Porsche 911 Carrera RS 2.7 on the studio turntable](docs/screenshots/porsche-911-rs.jpg)](docs/screenshots/porsche-911-rs.jpg) | [![White BMW M3 Sport Evolution with the Canada backdrop](docs/screenshots/bmw-m3-e30.jpg)](docs/screenshots/bmw-m3-e30.jpg) |
+| **BMW M5 (E39)** | **Nissan GT-R (R35)** |
+| [![Blue BMW M5 with the India backdrop](docs/screenshots/bmw-m5-e39.jpg)](docs/screenshots/bmw-m5-e39.jpg) | [![Blue Nissan GT-R with the Sakura backdrop](docs/screenshots/nissan-gt-r.jpg)](docs/screenshots/nissan-gt-r.jpg) |
+| **Nissan GT-R exploded teardown** | **BMW M5 X-ray** |
+| [![Nissan GT-R with its panels, wheels, and drivetrain separated](docs/screenshots/gt-r-teardown.jpg)](docs/screenshots/gt-r-teardown.jpg) | [![BMW M5 V8 and drivetrain visible through the translucent bodywork](docs/screenshots/m5-xray.jpg)](docs/screenshots/m5-xray.jpg) |
+
+## Build your own teardown showroom
+
+Use [`$build-teardown-showroom`](.agents/skills/build-teardown-showroom/SKILL.md) in Codex with the car or mechanical assembly you want to build. The skill covers component modeling, exploded views, cutaways, and visual checks. The [four-car build prompt](docs/BUILD_PROMPT.md) is its worked example.
 
 ## Run locally
 
@@ -39,7 +51,6 @@ The build writes the static site to `dist/`. `lint` runs the TypeScript check. T
 
 - [Screenshot gallery](docs/screenshots/README.md) shows every car and the exploded and X-ray views.
 - [Showroom demo MP4](iconic-cars-showroom-demo.mp4) is a 58-second, silent 1080p60 walkthrough. If the MP4 appears as a small pointer file, install Git LFS and run `git lfs pull --include="iconic-cars-showroom-demo.mp4"`. The app builds without downloading the video.
-- [Build prompt](docs/BUILD_PROMPT.md) describes the project for a coding agent, including the simulator architecture, controls, and demo storyboard.
 
 The React controls live in `src/components/TeardownHUD.tsx`. The vehicle specs, procedural models, and render loop live in `src/sim/`.
 
